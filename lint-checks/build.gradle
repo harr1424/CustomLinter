@@ -9,7 +9,7 @@ java {
 }
 
 dependencies {
-    compileOnly "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.20"
+    compileOnly "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.10"
     compileOnly "com.android.tools.lint:lint-api:26.6.4"
     compileOnly "com.android.tools.lint:lint-checks:26.6.4"
 }
