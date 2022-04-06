@@ -1,5 +1,6 @@
 package com.harr1424.lint_checks
 
+import com.android.SdkConstants
 import com.android.tools.lint.detector.api.*
 import kotlin.coroutines.CoroutineContext
 
@@ -28,7 +29,7 @@ class InputTypeDetector: LayoutDetector() {
         )
     }
 
-    override fun visitElement(context: XmlContext, element: CoroutineContext.Element) {
+    override fun visitElement(context: XmlContext, element: org.w3c.dom.Element) {
         if (!element.hasAttribute(SdkConstants.ATTR_INPUT_TYPE)) { // Check if the element has the `android:inputType` attribute
             context.report(
                 issue = ISSUE_MISSING_INPUT_TYPE, // The issue that we defined above
