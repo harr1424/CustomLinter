@@ -2,7 +2,6 @@ package com.harr1424.lint_checks
 
 import com.android.SdkConstants
 import com.android.tools.lint.detector.api.*
-import kotlin.coroutines.CoroutineContext
 
 class InputTypeDetector: LayoutDetector() {
     companion object {

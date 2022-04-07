@@ -2,6 +2,8 @@ package com.harr1424.lint_checks
 
 import com.android.tools.lint.client.api.IssueRegistry
 import com.android.tools.lint.detector.api.Issue
+import com.android.tools.lint.detector.api.CURRENT_API
+
 
 class LintRegistry : IssueRegistry() {
     override val api: Int
