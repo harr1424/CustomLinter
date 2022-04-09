@@ -6,12 +6,15 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import com.google.android.material.snackbar.Snackbar
 import com.harr1424.customlinter.databinding.FragmentSecondBinding
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
 class SecondFragment : Fragment() {
+
+    // do something here that receives input text
 
     private var _binding: FragmentSecondBinding? = null
 
@@ -32,8 +35,9 @@ class SecondFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.buttonSecond.setOnClickListener {
-            findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
+        binding.Send.setOnClickListener { view ->
+            Snackbar.make(view, "Your message has been sent.", Snackbar.LENGTH_LONG)
+                .setAction("Action", null).show()
         }
     }
 

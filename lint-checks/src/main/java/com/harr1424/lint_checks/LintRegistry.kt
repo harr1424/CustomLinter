@@ -11,6 +11,6 @@ class LintRegistry : IssueRegistry() {
 
     override val issues: List<Issue>
         get() = listOf(
-            InputTypeDetector.ISSUE_MISSING_INPUT_TYPE
+            InputHintDetector.ISSUE_MISSING_INPUT_HINT
         )
 }
