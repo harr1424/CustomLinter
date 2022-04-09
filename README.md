@@ -1,7 +1,7 @@
-###CSCI 491: Software Reliability & Testing
-###Homework 6 - Writing a Linter
-###John Harrington 
-###April 8, 2022
+### CSCI 491: Software Reliability & Testing
+### Homework 6 - Writing a Linter
+### John Harrington 
+### April 8, 2022
 
 For best results, download and install AndroidStudio, an IDE for developing Android applications, develped by JetBrains and Google:
 https://developer.android.com/studio
